@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+	</head>
+	<body>
+		<div id="container">
+			<table border="1">
+				<thead>
+					<th>
+						Nume
+						<button id="sort-by-name">
+							<i class="fa-solid fa-arrow-up"></i>
+						</button>
+					</th>
+					<th>Nota 1</th>
+					<th>Nota 2</th>
+					<th>Nota 3</th>
+					<th>
+						Medie
+						<button id="sort-by-avg">
+							<i class="fa-solid fa-arrow-up"></i>
+						</button>
+					</th>
+				</thead>
+				<tbody id="table-body-students"></tbody>
+			</table>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>

@@ -1,0 +1,8 @@
+#students {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+#students img {
+	width: 100px;
+}
