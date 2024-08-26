@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			.container {
+				position: relative;
+			}
+
+			[class^='circle'] {
+				position: absolute;
+				border-radius: 50%;
+			}
+
+			.circle1 [class^='circle'] {
+				top: 20px;
+				left: 20px;
+			}
+
+			.circle1 {
+				background-color: red;
+				width: 240px;
+				height: 240px;
+			}
+
+			.circle2 {
+				background-color: orange;
+				width: 200px;
+				height: 200px;
+			}
+
+			.circle3 {
+				background-color: yellow;
+				width: 160px;
+				height: 160px;
+			}
+
+			.circle4 {
+				background-color: green;
+				width: 120px;
+				height: 120px;
+			}
+
+			.circle5 {
+				background-color: blue;
+				width: 80px;
+				height: 80px;
+			}
+
+			.circle6 {
+				background: blueviolet;
+				width: 40px;
+				height: 40px;
+			}
+		</style>
+	</head>
+	<body>
+		<img
+			src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGv6LzooUP5FbS52KPQPok-2kLDxa9XaqtkA&s"
+			alt=""
+		/>
+		<div class="container">
+			<div class="circle1">
+				<div class="circle2">
+					<div class="circle3">
+						<div class="circle4">
+							<div class="circle5">
+								<div class="circle6"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

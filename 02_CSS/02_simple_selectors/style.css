@@ -1,0 +1,25 @@
+h2 {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: rgb(141, 205, 184);
+	background-color: black;
+}
+
+#second-h2 {
+	background-color: blueviolet;
+}
+
+.bg-light1 {
+	background-color: lightblue;
+}
+
+.text-red {
+	color: red;
+}
+
+.text-bold {
+	font-weight: bold;
+}
+
+.p-10 {
+	padding: 10px;
+}

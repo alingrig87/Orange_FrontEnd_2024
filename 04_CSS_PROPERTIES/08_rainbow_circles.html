@@ -5,7 +5,78 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
+		<style>
+			.container {
+				position: relative;
+			}
+			.circle1 {
+				position: absolute;
+				width: 200px;
+				height: 200px;
+				background-color: red;
+			}
+			.circle2 {
+				position: absolute;
+				background-color: orange;
+				width: 175px;
+				height: 175px;
+				top: 12.5px;
+				left: 12.5px;
+			}
+			.circle3 {
+				position: absolute;
+				background-color: yellow;
+				width: 150px;
+				height: 150px;
+				top: 25px;
+				left: 25px;
+			}
+
+			.circle4 {
+				position: absolute;
+				background-color: green;
+				width: 125px;
+				height: 125px;
+				top: 37.5px;
+				left: 37.5px;
+			}
+
+			.circle5 {
+				position: absolute;
+				background-color: blue;
+				width: 100px;
+				height: 100px;
+				top: 50px;
+				left: 50px;
+			}
+
+			.circle6 {
+				position: absolute;
+				background-color: magenta;
+				width: 75px;
+				height: 75px;
+				top: 62.5px;
+				left: 62.5px;
+			}
+
+			.container > div {
+				border-radius: 50%;
+			}
+		</style>
 	</head>
 
-	<body></body>
+	<body>
+		<img
+			src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGv6LzooUP5FbS52KPQPok-2kLDxa9XaqtkA&s"
+			alt=""
+		/>
+		<div class="container">
+			<div class="circle1"></div>
+			<div class="circle2"></div>
+			<div class="circle3"></div>
+			<div class="circle4"></div>
+			<div class="circle5"></div>
+			<div class="circle6"></div>
+		</div>
+	</body>
 </html>

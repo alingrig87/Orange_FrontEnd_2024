@@ -1,0 +1,20 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+div p {
+	color: blue;
+}
+
+div > p {
+	color: red;
+}
+
+article + div {
+	background-color: antiquewhite;
+}
+
+article ~ p {
+	background-color: green;
+}

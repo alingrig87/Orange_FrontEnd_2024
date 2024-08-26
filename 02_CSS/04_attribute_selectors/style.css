@@ -1,0 +1,28 @@
+[target] {
+	color: red;
+}
+
+[target='_self'] {
+	color: magenta;
+}
+
+[target='_blank'] {
+	color: green;
+}
+
+/* [class~='box'] {
+	color: darkcyan;
+	background-color: antiquewhite;
+} */
+
+[class|='first'] {
+	background-color: aquamarine;
+}
+
+[href^='https'] {
+	background-color: rgb(183, 158, 208);
+}
+
+[href$='.com'] {
+	font-size: 30px;
+}
