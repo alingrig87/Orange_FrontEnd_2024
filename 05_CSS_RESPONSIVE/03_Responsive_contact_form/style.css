@@ -1,0 +1,75 @@
+.container {
+	font-family: Roboto;
+	display: grid;
+	grid-template-areas:
+		'title title'
+		'last-name first-name'
+		'phone email'
+		'details details'
+		'submit submit';
+
+	gap: 20px;
+	grid-template-columns: 1fr 1fr;
+	padding: 50px;
+}
+
+.container input {
+	padding: 20px 26px;
+	outline: none;
+	width: 90%;
+	border: 1px solid lightgray;
+	font-size: 20px;
+}
+
+.container textarea {
+	padding: 20px 26px;
+	width: 95%;
+	height: 15vh;
+	border: 1px solid lightgray;
+	font-size: 20px;
+	font-family: Roboto;
+	outline: none;
+}
+
+.container div {
+	margin: 10px;
+}
+
+.submit button {
+	padding: 20px 80px;
+	background-color: gray;
+	text-transform: uppercase;
+	font-weight: bold;
+	border: none;
+}
+
+.title {
+	grid-area: title;
+	text-align: center;
+}
+
+.last-name {
+	grid-area: last-name;
+}
+
+.first-name {
+	grid-area: first-name;
+}
+
+.phone {
+	grid-area: phone;
+}
+
+.email {
+	grid-area: email;
+}
+
+.details {
+	grid-area: details;
+}
+
+.submit {
+	grid-area: submit;
+	display: flex;
+	justify-content: center;
+}
