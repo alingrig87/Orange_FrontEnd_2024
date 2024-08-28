@@ -13,6 +13,22 @@
 	padding: 50px;
 }
 
+/* smartphone */
+@media (max-width: 500px) {
+	.container {
+		grid-template-areas:
+			'title'
+			'last-name'
+			'first-name'
+			'phone'
+			'email'
+			'details'
+			'submit';
+
+		grid-template-columns: 1fr;
+	}
+}
+
 .container input {
 	padding: 20px 26px;
 	outline: none;
