@@ -77,10 +77,10 @@ var altceva = null;
 // Adunare
 var suma = 2 + 8;
 console.log(suma);
-console.log('10' + 2);
-console.log(2 + 2 + '10');
-console.log(2 + 2 + '10' + 3 + 3);
-console.log(2 + 2 + Number('10') + 3 + 3);
+console.log('10' + 2); // '102'
+console.log(2 + 2 + '10'); // '410'
+console.log(2 + 2 + '10' + 3 + 3); // '41033'
+console.log(2 + 2 + Number('10') + 3 + 3); // 20
 
 // Scadere
 var diferenta = 10 - 2;
@@ -109,7 +109,7 @@ console.log('i = ' + i);
 
 // decrementare
 var j = 8;
-j--;
+j--; // j = j - 1;
 j -= 1;
 console.log(`j = ${j}`);
 
@@ -120,3 +120,58 @@ var total = 10;
 total += 5;
 
 console.log((total *= 4)); // total = total * 4;
+
+// swap two number
+var numar1 = 5;
+var numar2 = 10;
+console.log('numar1 =', numar1, 'numar2 =', numar2);
+var tmp = numar1;
+numar1 = numar2;
+numar2 = tmp;
+console.log('Dupa schimbare', 'numar1 = ', numar1, 'numar2 = ', numar2);
+
+// swap numbers without tmp var
+numar1 = numar1 + numar2;
+numar2 = numar1 - numar2;
+numar1 = numar1 - numar2;
+
+// Operatorii de comparare
+// Comparare la egalitate ==
+console.log(5 == '5'); // true - se compara doar valorile
+// Comparare la egalitate stricta ===
+console.log(5 === '5'); //false - se compara valorile si tipurile, number nu este string
+
+// Comparare la inegalitate - diferit de - !=
+console.log(5 != 3);
+// Comparare la inegalitate stricta - strict diferit de !==
+console.log(5 !== '5');
+
+// > - mai mare, < - mai mic, >= - mai mare sau egal, <= - mai mic sau egal
+console.log(2 < 3, 4 > 2, 2 <= 1, 1 >= 5);
+
+// Operatorii logici - AND (&&) si OR(||)
+var amRovienieta;
+var amRca;
+
+var potIesiDinLocalitate = amRovienieta && amRca;
+
+var amCard;
+var amCash;
+
+var potPlati = amCard || amCash;
+
+// Operatorul typeof
+console.log(typeof 10);
+console.log(typeof '10');
+console.log(typeof true);
+console.log(typeof 2 * 3);
+console.log(typeof 10 + '10');
+console.log(typeof 10 === 3);
+console.log(typeof amCard);
+console.log(typeof Number('abc'));
+console.log(typeof NaN);
+
+// Operatorul ternar/conditional
+var varsta = 20;
+var poateConduce = varsta > 18 ? true : false;
+var formaDeSalut = varsta < 40 ? 'Buna!' : 'Buna ziua!';
