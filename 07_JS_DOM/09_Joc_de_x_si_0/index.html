@@ -3,40 +3,27 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<title>Div rectangles</title>
-		<style>
-			.circle {
-				width: 30px;
-				height: 30px;
-				border-radius: 50%;
-				margin: 5px;
-			}
-
-			.red {
-				background-color: red;
-			}
-
-			.transparent {
-				background-color: transparent;
-			}
-			.line {
-				display: flex;
-			}
-			.results {
-				display: flex;
-				gap: 20px;
-			}
-		</style>
+		<title>X si 0</title>
+		<link rel="stylesheet" href="style.css" />
 	</head>
-
 	<body>
-		<button id="show-square">Show square</button>
-		<label for="square-size"></label>
-		<input type="text" id="square-size" />
-		<input type="color" name="" id="square-color" />
-		<div class="results">
-			<div id="square"></div>
+		<h1>Jocul de X si 0</h1>
+		<div id="game-board">
+			<div id="row1">
+				<div class="cell" data-index="0"></div>
+				<div class="cell" data-index="1"></div>
+				<div class="cell" data-index="2"></div>
+			</div>
+			<div id="row2">
+				<div class="cell" data-index="3"></div>
+				<div class="cell" data-index="4"></div>
+				<div class="cell" data-index="5"></div>
+			</div>
+			<div id="row3">
+				<div class="cell" data-index="6"></div>
+				<div class="cell" data-index="7"></div>
+				<div class="cell" data-index="8"></div>
+			</div>
 		</div>
 		<script src="app.js"></script>
 	</body>

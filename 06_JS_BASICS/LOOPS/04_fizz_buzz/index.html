@@ -1,0 +1,31 @@
+<!-- Sa se scrie numerele de la start la end(ex: 1 la 100): -->
+<!-- Daca numarul este divizil cu 3 numarul va fi intr-un cerc rosu -->
+<!-- Daca numarul este divizil cu 5 numarul va fi intr-un cerc verde -->
+<!-- Daca numarul este divizil si cu 3 si cu 5 numarul va fi intr-un cerc albastru -->
+<!-- Pentru celelalte numere cercul va fi negru -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h3>Fizz Buzz</h3>
+			<div class="numar1">
+				<label for="numar1">Start</label>
+				<input type="text" id="numar1" />
+			</div>
+			<div class="numar2">
+				<label for="numar2">End</label>
+				<input type="text" id="numar2" />
+			</div>
+			<button onclick="fizzBuzz()">Fizz Buzz</button>
+			<p id="rezultat">Rezultatul va fi aici</p>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
