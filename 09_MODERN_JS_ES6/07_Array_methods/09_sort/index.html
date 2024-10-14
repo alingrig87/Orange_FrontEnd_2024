@@ -11,28 +11,18 @@
 		/>
 	</head>
 	<body>
-		<div id="container">
-			<table border="1">
-				<thead>
-					<th>
-						Nume
-						<button id="sort-by-name">
-							<i class="fa-solid fa-arrow-up"></i>
-						</button>
-					</th>
-					<th>Nota 1</th>
-					<th>Nota 2</th>
-					<th>Nota 3</th>
-					<th>
-						Medie
-						<button id="sort-by-avg">
-							<i class="fa-solid fa-arrow-up"></i>
-						</button>
-					</th>
-				</thead>
-				<tbody id="table-body-students"></tbody>
-			</table>
+		<div>
+			<label for="sort-options">Sorteaza dupa</label>
+			<select id="sort-options">
+				<option value="default">Oferte pentru tine</option>
+				<option value="noi">Noi</option>
+				<option value="priceAsc">Pret crescator</option>
+				<option value="priceDesc">Pret descrescator</option>
+				<option value="nameAsc">Nume(A-Z)</option>
+				<option value="nameDesc">Nume(Z-A)</option>
+			</select>
 		</div>
+		<div id="container"></div>
 		<script src="app.js"></script>
 	</body>
 </html>
